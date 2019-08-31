@@ -1,0 +1,24 @@
+@media (max-width: 1460px) {
+  #servicePackPopup .box {
+    font-size: 12px;
+    padding: 50px 20px;
+  }
+  #servicePackPopup {
+    padding: 0 60px;
+  }
+  #servicePackPopup .grid {
+    grid-template-columns: 270px 310px 270px;
+    width: 850px;
+  }
+}
+
+@media (max-width: 1366px) {
+  #servicePackPopup {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 1167px) {
+  #mainContainer {
+    min-width: 1167px;
+  }
+}

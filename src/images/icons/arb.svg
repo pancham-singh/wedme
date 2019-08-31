@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="14px" viewBox="0 0 21 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>arb</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="iOS" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="arb" transform="translate(-9.000000, -13.000000)">
+            <rect id="Rectangle-path" x="0.213" y="0.666" width="39" height="39" rx="19.5"></rect>
+            <g id="Group" transform="translate(9.053000, 13.156000)" fill-rule="nonzero">
+                <path d="M19.162,0.42 L2.158,0.42 C1.331,0.42 0.66,1.091 0.66,1.918 L0.66,12.026 C0.66,12.853 1.33,13.524 2.158,13.524 L19.162,13.524 C19.99,13.524 20.66,12.854 20.66,12.026 L20.66,1.918 C20.66,1.091 19.99,0.421 19.162,0.421 L19.162,0.42 Z" id="Shape" fill="#41479B"></path>
+                <polygon id="Shape" fill="#F5F5F5" points="0.66 2.835 20.66 2.835 20.66 11.111 0.66 11.111"></polygon>
+                <path d="M12.452,6.972 L13.348,5.421 L11.556,5.421 L10.66,3.869 L9.764,5.421 L7.973,5.421 L8.868,6.972 L7.973,8.524 L9.764,8.524 L10.66,10.076 L11.556,8.524 L13.348,8.524 L12.452,6.972 Z M12.469,5.928 L12.159,6.465 L11.849,5.928 L12.469,5.928 Z M11.866,6.972 L11.263,8.016 L10.057,8.016 L9.454,6.972 L10.057,5.928 L11.263,5.928 L11.866,6.972 Z M10.66,4.884 L10.97,5.421 L10.35,5.421 L10.66,4.884 Z M8.851,5.928 L9.471,5.928 L9.161,6.465 L8.851,5.928 Z M8.851,8.016 L9.161,7.48 L9.471,8.016 L8.851,8.016 Z M10.661,9.061 L10.351,8.524 L10.971,8.524 L10.661,9.061 Z M12.159,7.48 L12.469,8.016 L11.849,8.016 L12.159,7.48 Z" id="Shape" fill="#41479B"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="14px" viewBox="0 0 21 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>espa-ol</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="iOS" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="espa-ol" transform="translate(-9.000000, -13.000000)">
+            <g id="Group" transform="translate(9.660000, 13.008000)" fill-rule="nonzero">
+                <path d="M18.502,0.738 L1.498,0.738 C0.671,0.738 0,1.408 0,2.236 L0,5.106 L20,5.106 L20,2.236 C20,1.409 19.33,0.738 18.502,0.738 Z M0,12.344 C0,13.171 0.67,13.842 1.498,13.842 L18.502,13.842 C19.329,13.842 20,13.172 20,12.344 L20,9.474 L0,9.474 L0,12.344 Z" id="Shape" fill="#FF4B55"></path>
+                <polygon id="Shape" fill="#F2C478" points="0 5.106 20 5.106 20 9.474 0 9.474"></polygon>
+            </g>
+            <rect id="Rectangle-path" x="0.16" y="0.798" width="39" height="39" rx="19.5"></rect>
+        </g>
+    </g>
+</svg>

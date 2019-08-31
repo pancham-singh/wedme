@@ -1,0 +1,92 @@
+.sign {
+  direction: rtl;
+  padding-right: 115px;
+  min-height: 1024px;
+
+  &.in {
+    .content {
+      margin-top: 175px;
+    }
+  }
+
+  &.up {
+    .content {
+      margin-top: 75px;
+    }
+  }
+
+  .tagline {
+    font-size: 14px;
+    color: #55585e;
+    margin-top: -10px;
+    margin-bottom: 30px;
+  }
+  .content {
+    display: inline-block;
+  }
+
+  &.in {
+    .form-container {
+      max-width: 292px;
+      .terms-and-privacy-link {
+        font-size: 12px;
+        margin-top: 30px;
+        color: #888;
+        line-height: 14px;
+      }
+    }
+
+    form {
+      .forgot-password-container {
+        margin-top: -30px;
+
+        &::after {
+          clear: both;
+          content: '';
+          display: block;
+        }
+      }
+
+      .input-group {
+        .txt-link {
+          padding: 8px;
+          color: $primary-color;
+          display: inline-block;
+          text-decoration: none;
+          &.forgot-password {
+            float: left;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+.without-login {
+  background: #fff;
+
+  nav {
+    &.top {
+      box-shadow: none;
+    }
+  }
+
+  .left-section {
+    display: inline-grid;
+  }
+  .navigation-right {
+    background: url(~@src/images/image-3.jpg) center center no-repeat;
+    background-size: cover;
+  }
+}
+
+.inline-isbusy {
+  color: $primary-color;
+  padding-top: 10px;
+  position: absolute;
+}
+
+.inline-error {
+  @extend %error;
+}

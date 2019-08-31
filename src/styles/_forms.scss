@@ -1,0 +1,350 @@
+/* Forms SCSS code starts here */
+form {
+  margin-top: 10px;
+
+  label {
+    font-size: 14px;
+    color: $dark-text;
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  .has-error {
+    color: $form-error;
+    .msg {
+      display: block;
+    }
+    .input-control {
+      color: $form-error;
+      border: 1px solid $form-error;
+    }
+  }
+
+  .input-group {
+    padding-bottom: 23px;
+    position: relative;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 300;
+
+    .msg {
+      position: absolute;
+      right: 0;
+      padding: 5px 0;
+    }
+
+    .input-control {
+      width: 292px;
+      height: 40px;
+      padding: 10px;
+      border-radius: 3px;
+      font-weight: 300;
+      line-height: normal;
+      letter-spacing: -0.3px;
+      text-align: right;
+      color: $dark-text;
+      background: $grey;
+      border: solid 1px #dfe2ea;
+
+      > input {
+        background: transparent;
+      }
+
+      &.outline {
+        background: $white;
+      }
+      &.search {
+        background: $white url(~@src/images/icons/ic-search.svg) 7px center no-repeat;
+      }
+
+      &.email {
+        background: url(~@src/images/icons/ic-mail.svg) right 10px center no-repeat;
+      }
+      &.pass {
+        background: url(~@src/images/icons/ic-pass.svg) right 10px center no-repeat;
+      }
+      &.phone {
+        background: url(~@src/images/icons/ic-phone.svg) right 10px center no-repeat;
+      }
+      &.date {
+        background: url(~@src/images/icons/ic-calendar.svg) right 10px center no-repeat;
+      }
+      &.location {
+        background: url(~@src/images/icons/ic-pointer.svg) right 10px center no-repeat;
+      }
+    }
+
+    /* Handle Error State */
+    &.two-elem {
+      .two-elem-first-child {
+        .input-control {
+          padding-right: 10px !important;
+          @include border-radius(4px 0 0 4px);
+          border-right: 0;
+        }
+      }
+      .two-elem-second-child {
+        .input-control {
+          @include border-radius(0 4px 4px 0);
+        }
+      }
+
+      display: grid;
+      grid-template-columns: 80px auto;
+    }
+  }
+}
+
+.two-elem-provider-form {
+  display: grid;
+  grid-template-columns: auto 80px;
+
+  .two-elem-first-child {
+    .input-control {
+      padding-right: 10px !important;
+      @include border-radius(4px 0 0 4px);
+      border-right: 0;
+    }
+  }
+
+  .two-elem-second-child {
+    .input-control {
+      @include border-radius(0 4px 4px 0);
+    }
+  }
+}
+
+.full-page-spinner__overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  opacity: 1;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading {
+  display: inline-block;
+  background: url(~@src/images/logo-for-animation.png) center center no-repeat;
+  width: 120px;
+  height: 120px;
+
+  animation-name: color-change;
+  animation-duration: 0.6s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+@keyframes :global(color-change) {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.2;
+  }
+  100% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
+.error {
+  @extend %error;
+}
+
+.btn-input {
+  height: 40px;
+  padding: 0 15px;
+  border-radius: 3px;
+  width: 100%;
+
+  &.primary {
+    color: $white;
+    background-color: $primary-color;
+
+    &::placeholder {
+      color: #fff;
+    }
+  }
+
+  &.outline {
+    color: $primary-color;
+    border: solid 2px $primary-color;
+    background-color: $white;
+  }
+}
+
+.change-password {
+  color: $primary-color;
+  position: absolute;
+  left: 13px;
+  top: 13px;
+  text-decoration: underline;
+  cursor: pointer;
+  user-select: none;
+}
+
+.change-password-group {
+  height: 63px;
+  overflow: hidden;
+  transition: all 200ms ease;
+
+  &.is-expanded {
+    height: 280px;
+  }
+
+  & button:first-child {
+    margin: 0 12px;
+  }
+
+  &.not-displayed {
+    display: none;
+  }
+
+  &.has-error {
+    input {
+      border: 1px $primary-color solid;
+    }
+  }
+
+  .form-error {
+    margin-top: -10px;
+    padding-bottom: 10px;
+    font-size: 0.9em;
+    text-align: right;
+  }
+}
+
+.inline-form {
+  display: inline;
+  margin: 0 5px;
+  position: relative;
+}
+
+.input-label-group--inline {
+  label,
+  .input-group {
+    display: inline-block;
+  }
+
+  .input-group {
+    padding-left: 10px;
+  }
+}
+
+.checkbox-before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  @include border-radius(50%);
+  border: 1px solid $status-success;
+
+  &-checked {
+    background: #40dca0;
+    background-image: url(/checked.e5dd3eea.svg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: 40%;
+  }
+}
+
+.checkbox-control {
+  &,
+  input[type='checkbox'] {
+    height: 16px;
+    width: 16px;
+    position: relative;
+    margin-left: 4px;
+    vertical-align: sub;
+    opacity: 0;
+  }
+}
+
+.field-array {
+  padding: 0;
+  list-style: none;
+  li {
+    position: relative;
+    .remove {
+      position: absolute;
+      left: 0;
+      top: 14px;
+      min-width: auto;
+      font-weight: bold;
+      font-size: 12px;
+    }
+  }
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.signup-by-control-group {
+  margin: 20px 0;
+  margin-bottom: 38.5px;
+  border-radius: 3px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.signup-by-control {
+  text-align: center;
+  padding: 10px 0;
+  height: 40px;
+  flex-grow: 1;
+  display: inline-block;
+  background-color: $grey;
+  color: $dark-text;
+  cursor: pointer;
+
+  &:hover {
+    background-color: lighten($grey, 2);
+  }
+
+  &.active {
+    background-color: $primary-color;
+    color: #fff;
+
+    &:hover {
+      background-color: $primary-hover;
+    }
+  }
+}
+
+.additional-expense-form {
+  .input-group {
+    width: 95%;
+  }
+
+  .amount-field {
+    position: relative;
+  }
+
+  .is-paid-amount-field {
+    position: absolute;
+    left: -20px;
+    top: 10px;
+  }
+}
+
+.msg-phone {
+  bottom: 0;
+}

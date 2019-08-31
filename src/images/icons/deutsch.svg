@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="14px" viewBox="0 0 21 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>deutsch</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="iOS" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="deutsch" transform="translate(-9.000000, -13.000000)">
+            <rect id="Rectangle-path" x="0.213" y="0.008" width="39" height="39" rx="19.5"></rect>
+            <g id="Group" transform="translate(9.053000, 13.008000)" fill-rule="nonzero">
+                <path d="M19.162,0.448 L2.158,0.448 C1.331,0.448 0.66,1.118 0.66,1.946 L0.66,4.816 L20.66,4.816 L20.66,1.946 C20.66,1.119 19.99,0.448 19.162,0.448 Z" id="Shape" fill="#464655"></path>
+                <path d="M0.66,12.054 C0.66,12.881 1.33,13.552 2.158,13.552 L19.162,13.552 C19.99,13.552 20.66,12.882 20.66,12.054 L20.66,9.184 L0.66,9.184 L0.66,12.054 Z" id="Shape" fill="#FFE15A"></path>
+                <polygon id="Shape" fill="#FF4B55" points="0.66 4.816 20.66 4.816 20.66 9.184 0.66 9.184"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

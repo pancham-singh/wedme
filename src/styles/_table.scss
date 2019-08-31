@@ -1,0 +1,230 @@
+.table {
+  border-collapse: collapse;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: -0.3px;
+  width: 100%;
+  direction: rtl;
+  tr {
+    cursor: pointer;
+    direction: rtl;
+
+    &:hover {
+      td {
+        // background: lighten(#fff4f2, 3);
+        background: lighten(#fff4f2, 1.5);
+      }
+    }
+
+    &.active {
+      td {
+        background: #fff4f2;
+      }
+    }
+  }
+  th {
+    padding: 24px 15px;
+    font-weight: 400;
+    color: $black;
+    letter-spacing: -0.3px;
+    text-align: right;
+  }
+  tbody {
+    direction: rtl;
+  }
+  tfoot {
+    th {
+      padding: 15px;
+      border: 1px solid $grey;
+      background: $light-grey;
+      text-align: right;
+      &.not-paid {
+        color: $primary-color;
+        background: $mid-grey;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .additional-expense-row {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .budget-row {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  td {
+    padding: 15px;
+    border: 1px solid $grey;
+    position: relative;
+    min-height: 47px;
+    color: $dark-text;
+    &.actions {
+    }
+
+    &.grey {
+      background: $light-grey;
+    }
+
+    .checkbox {
+      width: 31px;
+      height: 31px;
+      display: inline-block;
+      cursor: pointer;
+      position: absolute;
+      right: -40px;
+      top: 7px;
+      background: url(~@src/images/icons/ic-select-vendor.svg) no-repeat;
+
+      &.selected,
+      &:hover {
+        background: url(~@src/images/icons/ic-select-vendor-selected.svg) no-repeat;
+      }
+    }
+
+    .status {
+      display: inline-block;
+      width: 17px;
+      margin: -3px 10px;
+      float: left;
+
+      &:before {
+        content: '';
+        display: block;
+        width: 16px;
+        height: 16px;
+        @include border-radius(50%);
+        float: left;
+        border: 1px solid $status-success;
+      }
+
+      &.success {
+        &:before {
+          background: $status-success;
+          background-image: url(~@src/images/icons/checked.svg);
+          background-size: 80%;
+          background-repeat: no-repeat;
+          background-position: 40%;
+        }
+      }
+    }
+    i.expand {
+      font-style: normal;
+      font-weight: bold;
+      color: $primary-color;
+      font-size: 12px;
+      padding: 15px;
+      cursor: pointer;
+    }
+  }
+  &.nine {
+    tr {
+      grid-template-columns: repeat(9, 1fr);
+    }
+  }
+  &.six {
+    tr {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+}
+
+.table-controls {
+  direction: rtl;
+  margin: 40px 0;
+  .title {
+    color: $light-text;
+    font-weight: 400;
+  }
+}
+
+.icons {
+  margin-bottom: 5px;
+
+  a,
+  .step-btn {
+    border: 1px solid $grey;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    float: right;
+    padding-top: 10px;
+    text-align: center;
+    margin-left: 15px;
+    cursor: pointer;
+    @include border-radius(50%);
+    &.btn {
+      border: solid 2px $primary-color;
+      @include border-radius(3px);
+      white-space: nowrap;
+      padding-top: 0px;
+      text-decoration: none;
+    }
+    &:hover {
+      background-color: #f2f5fc;
+    }
+
+    &:active,
+    &.active {
+      background: #e3e6f0;
+    }
+    img {
+      width: 15px;
+      margin-top: 0;
+    }
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+.table-links-wrapper {
+  position: relative;
+  height: 88px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+  direction: rtl;
+
+  .table-links {
+    position: absolute;
+    white-space: nowrap;
+    right: 0;
+    width: 100%;
+    text-align: right;
+    display: block;
+  }
+}
+.table-links {
+  direction: rtl;
+  margin: 30px 0;
+
+  a {
+    padding: 5px 0;
+    margin-left: 20px;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: $light-text;
+    font-size: 18px;
+    letter-spacing: -0.4px;
+    &:hover,
+    &.active {
+      color: $dark-text;
+      &::after {
+        width: 24px;
+        height: 3px;
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 50%;
+        margin-right: -12px;
+        background: $primary-color;
+      }
+    }
+  }
+}

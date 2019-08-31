@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>ic-happy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="iOS" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic-happy" transform="translate(-11.000000, -12.000000)">
+            <rect id="Rectangle-path" x="0.446" y="0.648" width="39" height="39" rx="19.5"></rect>
+            <path d="M26.946,20.54 C26.9443435,24.4044982 23.8104984,27.5361048 19.946,27.535 C16.08,27.535 12.946,24.403 12.946,20.54 C12.9465304,18.684015 13.6843262,16.904257 14.9970809,15.5922524 C16.3098355,14.2802479 18.090015,13.5434695 19.946,13.544 C23.812,13.544 26.946,16.676 26.946,20.54 Z" id="Shape" stroke="#8994B0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M16.946,22.538 C16.946,22.538 17.946,24.537 19.946,24.537 C21.946,24.537 22.946,22.538 22.946,22.538" id="Shape" stroke="#8994B0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M18.946,18.54 C18.946,19.0922847 18.4982847,19.54 17.946,19.54 C17.3937153,19.54 16.946,19.0922847 16.946,18.54 C16.946,17.9877153 17.3937153,17.54 17.946,17.54 C18.4982847,17.54 18.946,17.9877153 18.946,18.54 M22.946,18.54 C22.946,19.0922847 22.4982847,19.54 21.946,19.54 C21.3937153,19.54 20.946,19.0922847 20.946,18.54 C20.946,17.9877153 21.3937153,17.54 21.946,17.54 C22.4982847,17.54 22.946,17.9877153 22.946,18.54" id="Shape" fill="#FD786B" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

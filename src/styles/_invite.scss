@@ -1,0 +1,287 @@
+#invite {
+  padding: 50px;
+  h1 {
+    text-align: right;
+  }
+
+  table th:nth-child(1) {
+    width: 130px;
+    text-align: right;
+  }
+  /* Grid for Compare Section */
+  .invite {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-column-gap: 25px;
+    .profile-column {
+      @extend %box;
+      .content {
+        padding: 35px 20px 0 20px;
+      }
+    }
+  }
+
+  .table-controls {
+    .input-group {
+      display: inline-block;
+      margin-left: 20px;
+    }
+  }
+
+  .invite-status {
+    max-width: 520px;
+    text-align: center;
+    margin: 0 auto;
+    &.gift-status {
+      max-width: 760px;
+    }
+    .status-bar {
+      border: solid 1px #dfe2ea;
+      min-height: 80px;
+      @include border-radius(40px);
+      ul {
+        list-style: none;
+        padding: 0;
+        li {
+          width: 140px;
+          display: inline-block;
+          font-size: 18px;
+          color: $light-text;
+          .count {
+            font-size: 24px;
+            color: $primary-color;
+            font-weight: 400;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+.msg-listing {
+  direction: rtl;
+  padding-top: 35px;
+  .shuttle-alert {
+    margin-top: 30px;
+  }
+  p {
+    font-size: 14px;
+    margin: 0;
+    padding: 15px 0;
+    color: $dark-text;
+  }
+  .msg-item {
+    padding: 20px;
+    border-radius: 4px;
+    background-color: #f8faff;
+    border: solid 1px #dfe2ea;
+    color: $dark-text;
+    font-size: 14px;
+    min-height: 150px;
+    position: relative;
+    width: 100%;
+
+    &:last {
+      margin-bottom: 15px !important;
+    }
+  }
+  .word-count {
+    font-size: 12px;
+    color: #8994b0;
+    text-align: left;
+    display: block;
+  }
+}
+
+.table-two-section {
+  display: grid;
+  grid-template-columns: 52% auto;
+  .section {
+    .box {
+      min-height: 420px;
+      border: 1px solid $grey;
+      padding: 10px 40px;
+      a.btn {
+        margin: 0 7px;
+      }
+      .status-label {
+        display: block;
+        margin-top: 15px;
+        float: right;
+        padding-left: 20px;
+        font-size: 14px;
+        color:#55585e;
+        font-family: Rubik;
+        font-size: 14px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: -0.3px;
+        text-align: right;
+      }
+      .step-desc{
+        font-size: 14px;
+        color:#55585e;
+        font-family: Rubik;
+        font-size: 14px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: -0.3px;
+        text-align: center;
+        padding-bottom: 20px;
+      }
+      .step-summary {
+        font-size: 14px;
+        color: #7f8493;
+        font-family: Rubik;
+        font-size: 14px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: -0.3px;
+        text-align: center;
+      }
+      .step-name {
+        color: $dark-text;
+        display: block;
+        margin-top: 15px;
+        float: right;
+        padding-left: 20px;
+      }
+    }
+    &:nth-child(2) {
+      overflow-x: hidden;
+      overflow-y: auto;
+      position: relative;
+      .table {
+        direction: ltr;
+        position: absolute;
+      }
+    }
+  }
+}
+
+.invite-stages {
+  padding-top: 50px;
+  text-align: center;
+  .step-btn {
+    float: none;
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-left: 0px;
+    position: relative;
+    &::after {
+      content: '';
+      display: block;
+      width: 40px;
+      height: 40px;
+      top: 0;
+      position: absolute;
+    }
+    object {
+      margin-top: 2px;
+    }
+  }
+  .btn {
+    float: none;
+  }
+  .invitation-message {
+    width: 280px;
+    margin: 0 auto;
+    .msg-icon {
+      width: 110px;
+      height: 120px;
+      display: inline-block;
+      margin: 0 15px;
+      float: left;
+      font-size: 14px;
+      color: $dark-text;
+      text-decoration: none;
+    }
+    &:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+  }
+
+  .language {
+    width: 100%;
+    margin: 0 auto;
+    .lang-icon {
+      width: 80px;
+      height: 120px;
+      display: inline-block;
+      margin: 0 10px;
+      float: left;
+      font-size: 14px;
+      color: $dark-text;
+      text-decoration: none;
+    }
+    &:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+  }
+}
+
+.remaining-messages {
+  margin-top: 35px;
+  text-align: center;
+  .sms-box {
+    min-height: 110px;
+    margin-top: 50px;
+  }
+
+  .msg {
+    font-size: 14px;
+    color: $dark-text;
+    width: 50%;
+    display: inline-block;
+    float: left;
+    label {
+      font-size: 24px !important;
+      color: $primary-color;
+      display: block;
+    }
+    &.balance {
+    }
+  }
+}
+
+.notification {
+  background: #ffb6af;
+  color: $primary-color;
+  padding: 20px;
+  position: relative;
+  font-size: 14px;
+  margin: 15px 0;
+  text-align: right;
+  @include border-radius(4px);
+  .close {
+    color: $primary-color;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 16px;
+  }
+}
+
+.lovers-icon {
+  width: 90px;
+  display: block;
+  margin: auto;
+  object,
+  img {
+    width: 100%;
+  }
+
+}

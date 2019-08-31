@@ -1,0 +1,210 @@
+#profile {
+  padding: 50px;
+  position: relative;
+
+  h1 {
+    text-align: right;
+  }
+  .profile-block {
+    text-align: center;
+    margin: 50px 0 35px 0;
+
+    .profile-image {
+      position: relative;
+      overflow: hidden;
+      display: inline-block;
+
+      img {
+        height: inherit;
+        width: inherit;
+        width: 188px;
+        height: 188px;
+        @include border-radius(50%);
+      }
+
+      .change-image-input,
+      input[type='file'] {
+        position: absolute;
+        color: transparent;
+        top: 0;
+        right: 0;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        overflow: hidden;
+        cursor: pointer;
+
+        &::after {
+          content: '';
+          height: 40px;
+          width: 40px;
+          display: block;
+          position: absolute;
+          background-color: #fff;
+          top: 0;
+          background-image: url(~@src/images/icons/ic-camera.svg);
+          background-repeat: no-repeat;
+          background-color: $primary-color;
+          background-size: 50%;
+          background-position: 50% 40%;
+        }
+      }
+    }
+
+    .meant-to-be {
+      margin-top: -32px;
+      margin-left: -12px;
+      display: inline-block;
+      margin-bottom: 62px;
+    }
+  }
+
+  /* Grid for Profile Section */
+  .profile {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-column-gap: 25px;
+
+    .profile-column {
+      &:last-child {
+        .content {
+          padding: 0;
+        }
+
+        form {
+          margin-top: 0;
+        }
+      }
+
+      .content {
+        padding: 35px 20px 0 20px;
+      }
+
+      &.sms-block {
+        @extend %box;
+        position: relative;
+        margin-top: 25px;
+        .title {
+          &.main {
+            margin-top: 44px;
+            margin-bottom: 5px;
+          }
+          &.sub {
+            margin-bottom: 13.5px;
+            display: block;
+            color: $light-text;
+          }
+        }
+        .package {
+          background: $primary-color;
+          width: 113px;
+          min-height: 127px;
+          display: inline-block;
+          font-size: 18px;
+          line-height: 1.6;
+          padding: 20px;
+          text-align: center;
+          color: $white;
+          position: absolute;
+          right: 23px;
+          top: -30px;
+          z-index: 20;
+          @include border-radius(4px 0px 4px 4px);
+
+          &::after {
+            display: inline-block;
+            content: '';
+            width: 12px;
+            height: 22px;
+            position: absolute;
+            right: -11px;
+            top: 0;
+            z-index: -10;
+            background: url('~@src/images/icons/box-corner-shadow.svg') right top no-repeat;
+          }
+        }
+      }
+    }
+  }
+}
+
+.tab-section-profile {
+  .tab-heading {
+    margin: 0 -25px;
+    background-image: url(~@src/images/ic-hearts.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    .tab {
+      background: transparent;
+      padding: 24px 25px 24px 15px;
+      display: inline-block;
+      width: calc(50% - 50px);
+      float: left;
+      margin: 0 25px;
+      direction: rtl;
+      &.active {
+        @extend %box;
+        .btn.outline {
+          background-color: $primary-color;
+        }
+      }
+      &.active {
+        position: relative;
+
+        &::after {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 15px;
+          background: $white;
+          position: absolute;
+          left: 0;
+          bottom: -15px;
+          padding-right: 3px;
+        }
+      }
+      &:last-child {
+        &.active {
+          &::after {
+            right: 0;
+          }
+        }
+      }
+      .btn {
+        width: 100%;
+        text-align: right;
+      }
+
+      input {
+        background-image: url(~@src/images/ic-user.svg);
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+        padding-right: 30px;
+        background-size: 16px;
+      }
+
+      .btn-input {
+        &.primary {
+          background-image: url(~@src/images/ic-user-white.svg) !important;
+        }
+      }
+    }
+  }
+
+  .input-control {
+    width: 100% !important;
+    padding-right: 40px !important;
+  }
+}
+
+.form-shadow {
+  @extend %box;
+  padding: 35px 25px 0 25px;
+}

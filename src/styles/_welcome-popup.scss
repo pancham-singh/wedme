@@ -1,0 +1,60 @@
+.welcome-popup-container {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba($black, 0.5);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.welcome-popup {
+  max-width: 1045px;
+  display: grid;
+  grid-template-columns: auto 433px;
+  min-height: 695px;
+  background: $white;
+  @include border-radius(8px);
+  overflow: hidden;
+  .content {
+    padding: 50px;
+    direction: rtl;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: -0.3px;
+
+    .logo {
+      margin-top: 98px;
+    }
+
+    .welcome-text {
+      color: $light-text;
+    }
+
+    .welcome-note {
+      font-weight: 400;
+      margin: 0;
+      margin-bottom: 52px;
+      background: transparent;
+      color: $black;
+    }
+  }
+  .image {
+    background: url(~@src/images/image-3.jpg) center center no-repeat;
+    background-size: cover;
+  }
+
+  .btn {
+    margin: 15px 0;
+    color: $light-text;
+    height: 60px;
+    width: 230px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

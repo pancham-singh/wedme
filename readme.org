@@ -1,0 +1,9 @@
+* Wedme web app
+** TODO Login using email password
+** TODO Login using facebook
+** TODO Landing screen
+** TODO Signup using email password
+** TODO Signup using facebook
+** TODO Forgot password
+** TODO Profile (view/update)
+** TODO Remove Search, Contacts and Help from menu bar

@@ -1,0 +1,81 @@
+.big-plus-menu {
+  position: absolute;
+  left: 50%;
+  top: -35px;
+  margin-left: -35px;
+  text-align: center;
+  z-index: 9;
+  user-select: none;
+
+  &::before {
+    transform: rotate(0deg);
+    transition: all 100ms ease-in;
+    content: '';
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background-image: url(~@src/images/icons/ic-plus.svg);
+    background-size: 101px auto;
+    background-position: -15px -15px;
+    cursor: pointer;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &--open {
+    &::before {
+      transition: all 100ms ease-in;
+      transform: rotate(45deg);
+    }
+  }
+
+  &__list {
+    @extend %box;
+
+    transition: all 100ms ease;
+    width: 272px;
+    position: absolute;
+    left: -100px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    list-style-type: none;
+    margin-top: 20px;
+  }
+
+  &__list__item {
+    width: 100%;
+    direction: rtl;
+    text-align: right;
+    padding: 15px 0;
+    color: #55585e;
+    font-size: 14px;
+    cursor: pointer;
+
+    font-weight: 300;
+    cursor: pointer;
+
+    &--seperator {
+      border: solid 1px #dfe2ea;
+      margin-bottom: 5px;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+
+      &:hover {
+        color: $black;
+        font-weight: 500;
+      }
+    }
+  }
+
+  &--open &__list {
+    /* height: 100%; */
+    height: auto;
+    padding: 12px 18px;
+  }
+}

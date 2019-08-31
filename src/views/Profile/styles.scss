@@ -1,0 +1,14 @@
+:global {
+  .DayPickerInput {
+    input {
+      text-align: right;
+    }
+  }
+
+  .DayPickerInput-Overlay {
+    width: fit-content;
+    right: 0;
+    left: auto;
+    top: 41px;
+  }
+}

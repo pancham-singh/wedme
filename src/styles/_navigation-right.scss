@@ -1,0 +1,99 @@
+.navigation-right {
+  background: $primary-color;
+  min-height: 100vh;
+
+  .title-box {
+    background: url('~@src/images/bird-flag.svg') no-repeat;
+    display: block;
+    margin-left: -35px;
+    padding: 70px 45px 40px 65px;
+    margin-top: 18px;
+    text-align: center;
+    color: $primary-color;
+    .heading {
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: -0.5px;
+      margin: 0;
+    }
+    .subheading {
+      font-size: 16px;
+      font-weight: 300;
+      letter-spacing: -0.4px;
+    }
+  }
+
+  #brand {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  ul {
+    margin: 44px 30px 0 0;
+    padding: 0;
+    list-style: none;
+    color: $white;
+    text-align: right;
+
+    li {
+      margin: 14px 0;
+      padding-right: 30px;
+      position: relative;
+      padding: 3px 30px 3px 0;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 300;
+      letter-spacing: -0.4px;
+      a {
+        color: $white;
+        text-decoration: none;
+
+        &.active {
+          font-weight: 500;
+        }
+      }
+
+      &:hover {
+        font-weight: 500;
+      }
+
+      .icon {
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        &.search {
+          background: url(~@src/images/icons/ic-search-menu.svg) no-repeat;
+        }
+        &.comparison {
+          background: url(~@src/images/icons/ic-comparison-menu.svg) no-repeat;
+        }
+        &.budget {
+          background: url(~@src/images/icons/ic-creditcard-menu.svg) no-repeat;
+        }
+        &.invited {
+          background: url(~@src/images/icons/ic-invitations-menu.svg) no-repeat;
+        }
+        &.contacts {
+          background: url(~@src/images/icons/ic-contact-menu.svg) no-repeat;
+        }
+        &.profile {
+          background: url(~@src/images/icons/group-12.svg) no-repeat;
+        }
+        &.help {
+          background: url(~@src/images/icons/question.svg) no-repeat;
+        }
+        &.logout {
+          background: url(~@src/images/icons/power.svg) no-repeat;
+          background-size: contain;
+        }
+      }
+
+      &:last-child {
+        margin-top: 115px;
+      }
+    }
+  }
+}

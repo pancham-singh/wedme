@@ -1,0 +1,98 @@
+/* Buttons SCSS code starts here */
+.btn {
+  min-width: 130px;
+  height: 40px;
+  padding: 0 15px;
+  border-radius: 3px;
+  cursor: pointer;
+  position: relative;
+  input[type='file'] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  &.text-only {
+    padding: 0 25px 0 0;
+    display: inline-block;
+    height: auto;
+    font-size: 14px;
+    color: $primary-color;
+    line-height: 1.7;
+  }
+  &.primary {
+    color: $white;
+    background-color: $primary-color;
+    &.selected {
+      background-color: $primary-selected;
+    }
+    &:hover {
+      background-color: $primary-hover;
+    }
+  }
+  &.login,
+  &.signup {
+    width: 145px;
+    height: 34px;
+  }
+  &.outline {
+    color: $primary-color;
+    border: solid 2px $primary-color;
+    background-color: $white;
+    &.docs {
+      padding-right: 40px;
+      background: url(~@src/images/icons/ic-excel-btn.svg) right 10px center no-repeat;
+    }
+    &.chat {
+      padding-right: 40px;
+      background: url(~@src/images/icons/ic-send-sms.svg) right 10px center no-repeat;
+    }
+    &.selected {
+      background-color: $primary-selected;
+      color: $white;
+    }
+    &:hover {
+      background-color: $primary-hover;
+    }
+  }
+
+  &.facebook {
+    color: $white;
+    padding-right: 45px;
+    text-align: right;
+    background: $facebook-color url(~@src/images/facebook-icon.svg) right 8px center no-repeat;
+    width: 100%;
+    margin-bottom: 0px;
+  }
+
+  &.signup-facebook {
+    margin-bottom: 45px;
+  }
+}
+a.btn {
+  display: inline-block;
+  line-height: 40px;
+  text-decoration: none;
+}
+
+.buttons {
+  display: inline-block;
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  .btn {
+    float: left;
+  }
+  &.centered {
+    .btn {
+      float: none;
+    }
+  }
+}
+/* Buttons SCSS code Ends here */

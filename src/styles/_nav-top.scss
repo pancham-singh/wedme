@@ -1,0 +1,36 @@
+nav.top {
+  background-color: #ffffff;
+  position: relative;
+  padding: 0 55px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+  height: 62px;
+  .profile-block {
+    margin-top: 5px;
+    display: inline-block;
+    a,
+    label {
+      float: left;
+      font-size: 14px;
+      color: $primary-color;
+      line-height: 50px;
+      padding: 0 15px;
+    }
+    .profile {
+      @include border-radius(50%);
+      width: 49px;
+      height: 49px;
+      overflow: hidden;
+      display: inline-block;
+      float: left;
+      img {
+        width: auto;
+        max-height: 49px;
+      }
+    }
+    &::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+  }
+}

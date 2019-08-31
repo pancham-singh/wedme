@@ -1,0 +1,49 @@
+#compare {
+  padding: 50px;
+  position: relative;
+
+  h1 {
+    text-align: right;
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+
+  /* Grid for Compare Section */
+  .compare {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-column-gap: 25px;
+    .profile-column {
+      @extend %box;
+      .content {
+        padding: 35px 20px 0 20px;
+      }
+    }
+  }
+
+  .status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+  }
+
+  .status-title {
+  }
+}
+
+.add-more {
+  &::after {
+    content: '';
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-image: url(~@src/images/icons/ic-small-plus.svg);
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    top: 3px;
+  }
+}

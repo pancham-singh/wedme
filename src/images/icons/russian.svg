@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="14px" viewBox="0 0 21 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>invalid-name (2)@1x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Android" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="invalid-name-(2)" transform="translate(-10.000000, -13.000000)">
+            <rect id="Rectangle-path" x="0.813" y="0.666" width="39" height="39" rx="19.5"></rect>
+            <g id="Group" transform="translate(9.500000, 13.156000)" fill-rule="nonzero">
+                <path d="M19.315,0.42 L2.31,0.42 C1.483,0.42 0.812,1.091 0.812,1.918 L0.812,4.788 L20.812,4.788 L20.812,1.918 C20.812,1.091 20.142,0.421 19.315,0.421 L19.315,0.42 Z" id="Shape" fill="#F5F5F5"></path>
+                <path d="M0.813,12.026 C0.813,12.853 1.483,13.524 2.31,13.524 L19.315,13.524 C20.142,13.524 20.812,12.854 20.812,12.026 L20.812,9.156 L0.812,9.156 L0.812,12.026 L0.813,12.026 Z" id="Shape" fill="#FF4B55"></path>
+                <polygon id="Shape" fill="#41479B" points="0.813 4.789 20.813 4.789 20.813 9.157 0.813 9.157"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
